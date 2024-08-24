@@ -17,7 +17,12 @@ interface contextType{
     filterCategory : string,
     addEvent : (arr : Event) => void,
     editEvent : (arr : Event) => void ,
-    deleteEvent : (id : string) => void
+    deleteEvent : (id : string) => void,
+    onIsOpen : (index : number) => void,
+    onChangeTaskTitle : (index : number , task : string) => void,
+    onChangeTaskCategory : (index : number , task : string) => void,
+    onChangeTaskDate : (index : number , date : Date) => void,
+    
 }
 
 
